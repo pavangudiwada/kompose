@@ -53,8 +53,10 @@ __Convert your Docker Compose file to Kubernetes:__
 
 Run `kompose convert` in the same directory as your `docker-compose.yaml` file.
 
+Make sure your docker compose file has `.yaml` extension and not `.yml`.
+
 ```sh
-$ kompose convert                           
+$ kompose convert -f docker-compose.yaml                          
 INFO Kubernetes file "frontend-service.yaml" created         
 INFO Kubernetes file "redis-master-service.yaml" created     
 INFO Kubernetes file "redis-slave-service.yaml" created      
